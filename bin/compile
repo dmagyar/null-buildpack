@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 # bin/compile <build-dir> <cache-dir>
 
-echo "Executing $1/run"
 if [ -x $1/run ]; then
-  exec $1/run $1
+  echo "Executing $1/compile"
+  exec $1/compile $1
 fi
+echo "Compile done"
+exit 0
