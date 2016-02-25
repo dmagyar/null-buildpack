@@ -3,7 +3,7 @@
 
 if [ -x $1/compile ]; then
   echo "Executing $1/compile"
-  exec $1/compile $1
+  exec $1/compile $1 $2
 fi
 echo "Compile done"
 exit 0
